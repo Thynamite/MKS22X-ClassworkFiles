@@ -23,6 +23,6 @@ public class MakingAllWords{
 
   public static void main(String[] args) {
     System.out.println(makeAllWords(2,3));
-  
+    System.out.println(makeAllWords(3,26));
   }
 }
