@@ -13,10 +13,16 @@ public class MakingAllWords{
     if (k == 0) {
       words.add(word);
     }
-    for (int x = 1; x <= maxLetter; x++){
-      help(k,word + (char)(('a' - 1) + x),words,maxLetter);
+    else{
+      for (int x = 1; x <= maxLetter; x++){
+        help(k-1,word + (char)(('a' - 1) + x),words,maxLetter);
+      }
     }
   }
   //a == 97
 
+  public static void main(String[] args) {
+    System.out.println(makeAllWords(2,3));
+  
+  }
 }
